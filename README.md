@@ -5,8 +5,7 @@ A retro operating system that's programmed in a functional-language with visual 
 
 ## The goal of this project
 
-The goal of this project is to get a weird retro operating system interpreting programs written in a functional programming language. (And itself as the kernel will ALSO be written in
-the same functional programming language) to run on a rig with my spare Am486 DX4-120. 
+The goal of this project is to get a weird retro operating system interpreting programs written in a functional programming language to run on a rig with my spare Am486 DX4-120. 
 
 ![Am486 DX4-120](https://cdn.cpu-world.com/CPUs/80486/S_AMD-A80486DX4-120SV8B.jpg)
 

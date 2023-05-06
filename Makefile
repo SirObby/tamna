@@ -3,8 +3,8 @@ CC=gcc -m32 -march=i486
 all:
 	mkdir -p bin
 	${CC} boot/boot.s  -nostdlib -c -o bin/boot.o
-	${CC} -c smallkernel/kernel.c -o bin/kernel.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
-	${CC} -c smallkernel/tty.c -o bin/tty.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
+	${CC} -c kernel/kernel.c -o bin/kernel.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
+	${CC} -c kernel/tty.c -o bin/tty.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
 	${CC} -T linker.ld -o bin/tanna.bin -ffreestanding -O2 -nostdlib bin/boot.o bin/kernel.o bin/tty.o
 
 mkiso:
